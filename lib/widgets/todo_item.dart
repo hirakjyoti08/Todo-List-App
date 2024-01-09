@@ -6,7 +6,13 @@ import '../model/todo.dart';
 
 class TodoItem extends StatelessWidget {
   final ToDo todo;
-  const TodoItem({super.key, required this.todo});
+  final onToDoChanged;
+  final onDeleteItem;
+  const TodoItem(
+      {super.key,
+      required this.todo,
+      required this.onDeleteItem,
+      required this.onToDoChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +20,14 @@ class TodoItem extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 20),
       child: ListTile(
         onTap: () {
-          print('tapped');
+          //print('tapped');
+          onToDoChanged(todo);
         },
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
-          todo.isDone? Icons.check_box : Icons.check_box_outline_blank,
+          todo.isDone ? Icons.check_box : Icons.check_box_outline_blank,
           color: tdBlue,
         ),
         title: Text(
@@ -28,7 +35,7 @@ class TodoItem extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             color: tdBlack,
-            decoration: todo.isDone? TextDecoration.lineThrough: null,
+            decoration: todo.isDone ? TextDecoration.lineThrough : null,
           ),
         ),
         trailing: Container(
@@ -45,7 +52,8 @@ class TodoItem extends StatelessWidget {
               iconSize: 18,
               icon: Icon(Icons.delete),
               onPressed: () {
-                print('clicked');
+                //print('clicked');
+                onDeleteItem(todo.id);
               },
             )),
       ),
