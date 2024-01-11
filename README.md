@@ -10,19 +10,9 @@ A cross-platform Todo List application developed using Flutter. Manage your task
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license
+- [Contribution](#contribution)
+- [License](#license)
 
-## Screenshots
-
-Screenshot 1
-![Screenshot 1](https://github.com/hirakjyoti08/Todo-List-App/assets/76906387/06703535-a386-4e4d-b851-835bfb5eba1b)
-*Pixel 4 API 30 Emulator running the application*
-
-
-Screenshot 2
-![Android Emulator - Pixel_4_API_30_5554 2024-01-11 11-34-20](https://github.com/hirakjyoti08/Todo-List-App/assets/76906387/ea8e2ad2-51e8-4076-ab0d-3b3a2658af7c)
-*GIF which shows adding, completing, and deleting a task*
 
 ## Features
 
@@ -74,6 +64,17 @@ Please adhere to the code of conduct when contributing.
 ## License
 
 This project is licensed under the `MIT License`.
+
+## Screenshots
+
+Screenshot 1
+![Screenshot 1](https://github.com/hirakjyoti08/Todo-List-App/assets/76906387/06703535-a386-4e4d-b851-835bfb5eba1b)
+*Pixel 4 API 30 Emulator running the application*
+
+
+Screenshot 2
+![Android Emulator - Pixel_4_API_30_5554 2024-01-11 11-34-20](https://github.com/hirakjyoti08/Todo-List-App/assets/76906387/ea8e2ad2-51e8-4076-ab0d-3b3a2658af7c)
+*GIF which shows adding, completing, and deleting a task*
 
 
 
