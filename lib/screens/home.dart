@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
                     print('clicked');
                   },
                   child: Text(
-                    'github.com/hirakjyoti08',
+                    'Github- hirakjyoti08',
                     style: TextStyle(
                       fontFamily: 'Pacifico',
                       fontSize: 14,
